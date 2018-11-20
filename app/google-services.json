@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "461209356399",
+    "firebase_url": "https://photostation-7e0e6.firebaseio.com",
+    "project_id": "photostation-7e0e6",
+    "storage_bucket": "photostation-7e0e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461209356399:android:3c60f9120d49a01d",
+        "android_client_info": {
+          "package_name": "ru.yandex.dunaev.mick.photostation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461209356399-js202c3nichfpgmtsvf89uagp8eijj3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.yandex.dunaev.mick.photostation",
+            "certificate_hash": "692aa344bfd191de2863ad30163d163637cee1c6"
+          }
+        },
+        {
+          "client_id": "461209356399-sra6of81ohjd244imgrgmm58h7q550tv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdGFGTzkSrwvi7jysXQ17dQXZQYtanPnQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461209356399-sra6of81ohjd244imgrgmm58h7q550tv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
