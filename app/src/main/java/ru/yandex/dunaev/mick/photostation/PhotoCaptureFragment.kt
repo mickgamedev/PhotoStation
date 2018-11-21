@@ -32,8 +32,7 @@ class PhotoCaptureFragment : Fragment() {
         binding.camera.apply{
             mapGesture(Gesture.PINCH, GestureAction.ZOOM)
             mapGesture(Gesture.SCROLL_VERTICAL, GestureAction.EXPOSURE_CORRECTION)
-            setFacing(Facing.BACK)
-            setGrid(Grid.DRAW_PHI)
+            Repository.restoreCameraState(this)
             addCameraListener(object: CameraListener() {
                 override fun onPictureTaken(jpeg: ByteArray?) {
                     super.onPictureTaken(jpeg)
@@ -53,4 +52,19 @@ class PhotoCaptureFragment : Fragment() {
         binding.camera.capturePicture()
     }
 
+    fun onSwitchCamera() = with(binding.camera){
+        facing = if(facing == Facing.BACK) Facing.FRONT else Facing.BACK
+    }
+
+    fun onSwitchGrid() = with(binding.camera){
+        grid = if(grid == Grid.DRAW_PHI) Grid.OFF else Grid.DRAW_PHI
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Repository.saveCameraState(binding.camera)
+
+    }
 }
+
+

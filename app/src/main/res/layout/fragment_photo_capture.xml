@@ -28,9 +28,26 @@
                 android:contentDescription="@string/capture_image"
                 android:src="@drawable/ic_camera_green_100dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/imageView" android:layout_marginBottom="8dp"
+                android:layout_height="wrap_content" android:id="@+id/capture" android:layout_marginBottom="8dp"
                 app:layout_constraintBottom_toBottomOf="@+id/camera" app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"/>
+        <ImageView
+                android:onClick="@{() -> fragment.onSwitchCamera()}"
+                android:contentDescription="@string/swith_camera_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_switch_camera"
+                android:id="@+id/camera_switch"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="8dp"/>
+        <ImageView
+                android:onClick="@{() -> fragment.onSwitchGrid()}"
+                android:contentDescription="@string/grid_switch_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/ic_grid"
+                android:id="@+id/grid_switch" android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/camera_switch" app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginStart="8dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

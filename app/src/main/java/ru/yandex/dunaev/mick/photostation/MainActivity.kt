@@ -28,6 +28,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         model.trollFace = getDrawable(R.drawable.ic_trollface)
+
+        
     }
 
     private fun menuItemSelected(item: MenuItem): Boolean{

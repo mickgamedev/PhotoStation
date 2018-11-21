@@ -7,4 +7,6 @@
     <string name="menu_assistant_text">Assistant</string>
     <string name="capture_image">Capture image</string>
     <string name="image_view">image view</string>
+    <string name="swith_camera_text">Switch camera</string>
+    <string name="grid_switch_text">grid switch</string>
 </resources>
