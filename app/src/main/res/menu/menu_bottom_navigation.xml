@@ -4,4 +4,5 @@
     <item android:title="@string/menu_photo_text" android:icon="@drawable/ic_camera_black_24dp" android:id="@+id/menu_photo_id"/>
     <item android:title="@string/menu_assistant_text" android:icon="@drawable/ic_assistant_photo_black_24dp"
           android:id="@+id/menu_assistant_id"/>
+    <item android:title="@string/gallary" android:icon="@drawable/ic_photo_library_black_24dp" android:id="@+id/menu_gallary_id"/>
 </menu>

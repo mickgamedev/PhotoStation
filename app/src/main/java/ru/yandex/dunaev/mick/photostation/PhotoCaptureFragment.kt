@@ -36,7 +36,7 @@ class PhotoCaptureFragment : Fragment() {
             addCameraListener(object: CameraListener() {
                 override fun onPictureTaken(jpeg: ByteArray?) {
                     super.onPictureTaken(jpeg)
-                    CameraUtils.decodeBitmap(jpeg) {
+                    CameraUtils.decodeBitmap(jpeg,4096, 4096) {
                         model.setImage(it)
                         onCaptureComplete()
                     }

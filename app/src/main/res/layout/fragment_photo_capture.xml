@@ -13,8 +13,6 @@
 
         <com.otaliastudios.cameraview.CameraView
                 app:cameraSessionType="picture"
-                app:cameraPictureSizeMaxWidth="1024"
-                app:cameraPictureSizeMaxHeight="1024"
                 android:id="@+id/camera"
                 android:keepScreenOn="true"
                 android:layout_width="0dp"

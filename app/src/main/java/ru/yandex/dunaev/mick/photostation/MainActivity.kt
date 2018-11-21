@@ -38,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 onCaptureComplete = this@MainActivity::onCaptureComplete
             })
             R.id.menu_assistant_id -> setFragment(PhotoViewFragment())
+            R.id.menu_gallary_id -> setFragment(FaceViewFragment())
         }
         return true
     }

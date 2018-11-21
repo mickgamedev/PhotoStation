@@ -9,4 +9,5 @@
     <string name="image_view">image view</string>
     <string name="swith_camera_text">Switch camera</string>
     <string name="grid_switch_text">grid switch</string>
+    <string name="gallary">Gallary</string>
 </resources>
